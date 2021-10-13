@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tip Calculator</title>
+        <!--Stylesheet-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <section>
+               
+                <div class="wrapper">
+                  
+                    <label for="bill" class="lbl">
+                        Bill
+                    </label>
+                   
+                    <div class="input-box">
+                        <span>$</span>
+                        <input type="number" value="0.00" min="0.00" id="bill" class="val">                
+                    </div>
+               
+                </div>
+            
+            </section>
+            
+            <section>
+               
+                <div class="wrapper">
+                   
+                    <label for="tip" class="lbl">
+                        Tip %
+                    </label>
+                    
+                    <span id="tip-percentage" class="val">
+                        0
+                    </span>
+
+                </div>
+                
+                <input type="range" min="1" id="tip" value="1">
+              
+                <div class="wrapper">
+                   
+                    <label for="no-of-people" class="lbl">
+                        No. Of People
+                    </label>
+                   
+                    <span id="split-num" class="val">
+                        0
+                    </span>
+               
+                </div>
+                
+                <input type="range" min="1"  max="10" id="no-of-people" value="1">
+            
+            </section>
+           
+            <section >
+               
+                <div class="wrapper">
+                    
+                    <span class="lbl">
+                        Tip Per Person
+                    </span>
+                   
+                    <span id="tip-per-person" class="val">
+                        0
+                    </span>
+              
+                </div>
+               
+                <div class="wrapper">
+                  
+                    <span class="lbl" >
+                        Total Per Person
+                    </span>
+                  
+                    <span id="total-per-person" class="val">
+                        $0
+                    </span>
+               
+                </div>
+          
+            </section>
+        
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
